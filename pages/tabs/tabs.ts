@@ -16,4 +16,6 @@ export class TabsPage {
   constructor() {
 
   }
+
+  //colocar metodos para retornar os usernames
 }
