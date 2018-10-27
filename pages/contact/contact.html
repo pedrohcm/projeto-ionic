@@ -51,4 +51,27 @@
     <button ion-button block color="dark" (click)="mostraAlertOla()">Olá</button>
   <button ion-button block color="clear" (click)="mostraAlertMassa()">Massa</button>
   <button ion-button block color="dark" (click)="mostraAlertShow()">Show</button>
+  <ion-list>
+    <ion-item> Left Icon Button
+      <button ion-button outline item-end icon-start>
+        <ion-icon name="star"></ion-icon> Left Icon
+      </button>
+    </ion-item>
+  </ion-list>
+  <ion-fab top right edge>
+    <button ion-fab mini>
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list> <button ion-fab>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button> <button ion-fab>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button> <button ion-fab>
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </button> <button ion-fab>
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </button> </ion-fab-list>
+  </ion-fab>
+  <ion-fab right bottom> <button ion-fab color="light"></button>
+  </ion-fab>
 </ion-content>
