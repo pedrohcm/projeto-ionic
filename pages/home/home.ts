@@ -8,8 +8,13 @@ import { AlertController } from 'ionic-angular';
 })
 export class HomePage {
 
+<<<<<<< HEAD
   testRadioOpen = true;
   testRadioResult = null;
+=======
+  constructor(public navCtrl: NavController,
+    public alerCtrl: AlertController) {
+>>>>>>> 272663576dedafa8a621976bd6d9d97af0fedd4c
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
@@ -24,4 +29,28 @@ export class HomePage {
     alert.present();
   }
 
+  mostraAlertOla() {
+    let alert = this.alerCtrl.create({
+      title: 'Olá',
+      message: 'Tudo bem?',
+      buttons: ['Ok']
+    });
+    alert.present()
+  }
+  mostraAlertMassa() {
+    let alert = this.alerCtrl.create({
+      title: 'Massa',
+      message: 'Peso',
+      buttons: ['Ok']
+    });
+    alert.present()
+  }
+  mostraAlertShow() {
+    let alert = this.alerCtrl.create({
+      title: 'Show!',
+      message: 'Mesmo!',
+      buttons: ['Ok']
+    });
+    alert.present()
+  }
 }
