@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
+import { AlertController, ActionSheetController } from 'ionic-angular';
 
 @Component({
   selector: 'page-profile',
@@ -11,7 +11,9 @@ export class ProfilePage {
   testRadioOpen = true;
   testRadioResult = null;
 
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, 
+    public alertCtrl: AlertController,
+    public actionSheetCtrl: ActionSheetController) {
 
   }
 
@@ -97,4 +99,32 @@ export class ProfilePage {
     });
     alert.present()
   }
+
+  presentActionSheet() {
+    const actionSheet = this.actionSheetCtrl.create({
+      title: 'Modify your album',
+      buttons: [
+        {
+          text: 'Destructive',
+          role: 'destructive',
+          handler: () => {
+            console.log('Destructive clicked');
+          }
+        },{
+          text: 'Archive',
+          handler: () => {
+            console.log('Archive clicked');
+          }
+        },{
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        }
+      ]
+    });
+    actionSheet.present();
+  }
+}
 }
