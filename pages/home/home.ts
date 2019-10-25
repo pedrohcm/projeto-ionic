@@ -25,7 +25,7 @@ export class HomePage {
   }
 
   mostraAlertOla() {
-    let alert = this.alerCtrl.create({
+    let alert = this.alertCtrl.create({
       title: 'Olá',
       message: 'Tudo bem?',
       buttons: ['Ok']
@@ -33,7 +33,7 @@ export class HomePage {
     alert.present()
   }
   mostraAlertMassa() {
-    let alert = this.alerCtrl.create({
+    let alert = this.alertCtrl.create({
       title: 'Massa',
       message: 'Peso',
       buttons: ['Ok']
@@ -41,11 +41,38 @@ export class HomePage {
     alert.present()
   }
   mostraAlertShow() {
-    let alert = this.alerCtrl.create({
+    let alert = this.alertCtrl.create({
       title: 'Show!',
       message: 'Mesmo!',
       buttons: ['Ok']
     });
     alert.present()
+  }
+
+  showCheckbox() {
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Which planets have you visited?');
+
+    alert.addInput({
+      type: 'checkbox',
+      label: 'Alderaan',
+      value: 'value1',
+      checked: true
+    });
+
+    alert.addInput({
+      type: 'checkbox',
+      label: 'Bespin',
+      value: 'value2'
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'Okay',
+      handler: data => {
+        console.log('Checkbox data:', data);
+      }
+    });
+    alert.present();
   }
 }
