@@ -35,5 +35,40 @@
 
   <button ion-button icon="checkbox"></button>
 
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <ion-list radio-group>
+    <ion-list-header>
+      Language
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Go</ion-label>
+      <ion-radio checked="true" value="go"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Rust</ion-label>
+      <ion-radio value="rust"></ion-radio>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Python</ion-label>
+      <ion-radio value="python" disabled="true"></ion-radio>
+    </ion-item>
+  </ion-list>
+
 
 </ion-content>
