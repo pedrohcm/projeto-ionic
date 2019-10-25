@@ -8,13 +8,8 @@ import { AlertController } from 'ionic-angular';
 })
 export class HomePage {
 
-<<<<<<< HEAD
   testRadioOpen = true;
   testRadioResult = null;
-=======
-  constructor(public navCtrl: NavController,
-    public alerCtrl: AlertController) {
->>>>>>> 272663576dedafa8a621976bd6d9d97af0fedd4c
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
