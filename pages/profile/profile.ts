@@ -10,6 +10,8 @@ export class ProfilePage {
 
   testRadioOpen = true;
   testRadioResult = null;
+  nome = "test";
+  endereco = "test";
 
   constructor(public navCtrl: NavController, 
     public alertCtrl: AlertController,
