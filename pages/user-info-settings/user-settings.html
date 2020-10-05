@@ -35,6 +35,15 @@
 
   <button ion-button icon="checkbox"></button>
 
+<ion-segment (ionChange)="segmentChanged($event)">
+  <ion-segment-button value="dogs">
+    <ion-label>Dogs</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="cats">
+    <ion-label>Cats</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
   <ion-list>
 
     <ion-item>
