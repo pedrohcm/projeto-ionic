@@ -23,6 +23,7 @@
     Aqui ficam as informacoes do telefone
   </p>
 
+
 <IonList>
           <IonRadioGroup value={selected} onIonChange={e => setSelected(e.detail.value)}>
             <IonListHeader>
@@ -47,4 +48,5 @@
           <IonItemDivider>Your Selection</IonItemDivider>
           <IonItem>{selected ?? '(none selected'}</IonItem>
         </IonList>
+
 </ion-content>
